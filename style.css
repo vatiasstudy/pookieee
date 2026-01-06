@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+/* Pages */
+.page {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 14vh;
+    color: white;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Page backgrounds */
+.page1 {
+    background: radial-gradient(circle, #6a0572, #000);
+}
+
+.page2 {
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    color: #000;
+}
+
+.page3, .page4 {
+    background: radial-gradient(circle, #ff5fa2, #1a0010);
+    box-shadow: inset 0 0 80px hotpink;
+}
+
+.page5 {
+    background: radial-gradient(circle, #000428, #004e92);
+}
+
+/* Name */
+.name {
+    font-size: 90px;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: glowZoom 3s infinite alternate;
+}
+
+@keyframes glowZoom {
+    from { transform: scale(0.6); text-shadow: 0 0 10px white; }
+    to { transform: scale(1.2); text-shadow: 0 0 40px white; }
+}
+
+/* Buttons */
+.btn {
+    margin-top: 50px;
+    padding: 15px 45px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(45deg, pink, hotpink);
+    color: white;
+    box-shadow: 0 0 25px hotpink;
+}
+
+/* File */
+.file {
+    width: 65%;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border: 5px solid #7a4a2e;
+}
+
+.bubble {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 18px;
+    background: #ffe6f0;
+    border-radius: 25px;
+    box-shadow: 0 0 15px pink;
+}
+
+.crime {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff3cd;
+    border: 3px dashed #ff4d4d;
+    box-shadow: 0 0 18px #ff4d4d;
+}
+
+/* BIG TEXT (Pages 3 & 4) */
+.big-heading {
+    font-size: 50px;
+    text-shadow: 0 0 25px hotpink;
+}
+
+.big-text {
+    font-size: 28px;
+    line-height: 1.6;
+    text-shadow: 0 0 20px pink;
+}
+
+/* Final page animation */
+.friend-text {
+    font-size: 22px;
+    font-weight: bold;
+    animation: friendAppear 3s forwards;
+}
+
+@keyframes friendAppear {
+    0% {
+        transform: scale(0.2) rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2.2) rotate(360deg);
+        opacity: 1;
+        text-shadow: 0 0 40px white;
+    }
+}
+
+/* Corners */
+.corner {
+    position: absolute;
+    font-size: 18px;
+}
+
+.corner.right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.corner.left {
+    top: 20px;
+    left: 20px;
+}
+
+.respect {
+    margin-top: 60px;
+    opacity: 0.85;
+}
